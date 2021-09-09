@@ -22,5 +22,7 @@ uint32_t rangen(int mini, int maxi){
     return (generations[gens-1]%(maxi-mini) + mini); //mod last value by max - min then add min to ensure the value lies in specified range
 }
 
-
+int main(){
+    printf("%u\n", rangen(0,10000));
+}
 
